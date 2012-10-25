@@ -48,3 +48,15 @@ function resetDetails(){
 	document.getElementById("fphone").value="";
 	document.getElementById("fmobile").value="";
 }
+
+function populateUsingJsonParser(){
+	alert(JSONObject);
+	var json = JSON.stringify(JSONObject);
+	alert(json);
+	var parsedObj = JSON.parse(json);
+	document.getElementById("fname").value=parsedObj.name;
+	document.getElementById("faddress").value=parsedObj.address;
+	document.getElementById("fage").value=parsedObj.age;
+	document.getElementById("fphone").value=parsedObj.phone;
+	document.getElementById("fmobile").value=parsedObj.mobile;
+}
