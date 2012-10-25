@@ -50,9 +50,7 @@ function resetDetails(){
 }
 
 function populateUsingJsonParser(){
-	alert(JSONObject);
 	var json = JSON.stringify(JSONObject);
-	alert(json);
 	var parsedObj = JSON.parse(json);
 	document.getElementById("fname").value=parsedObj.name;
 	document.getElementById("faddress").value=parsedObj.address;
